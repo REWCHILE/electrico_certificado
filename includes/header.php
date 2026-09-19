@@ -58,8 +58,8 @@ $isHeaderDark = $isHeaderDark ?? true;
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <!-- Stylesheet -->
-    <link rel="stylesheet" href="<?= BASE_URL ?>/assets/css/style.css">
+    <!-- Stylesheet con Cache Busting Dinámico -->
+    <link rel="stylesheet" href="<?= BASE_URL ?>/assets/css/style.css?v=<?= file_exists(__DIR__ . '/../assets/css/style.css') ? filemtime(__DIR__ . '/../assets/css/style.css') : '2.1' ?>">
 
     <!-- JSON-LD Schema: LocalBusiness & Electrician con 4.747 Reseñas -->
     <script type="application/ld+json">
@@ -145,7 +145,7 @@ $isHeaderDark = $isHeaderDark ?? true;
                     </div>
 
                     <div class="nav-item">
-                        <a href="<?= BASE_URL ?>/faq" class="nav-link">Preguntas Frecuentes</a>
+                        <a href="<?= BASE_URL ?>/faq" class="nav-link">Preguntas</a>
                     </div>
 
                     <div class="nav-item">

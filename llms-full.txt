@@ -99,10 +99,28 @@ Domingo Isain Plaza Caamaño y su equipo cubren todas las comunas del Gran Santi
 R: Directamente en el portal oficial de la SEC escaneando el código QR de su credencial o ingresando su RUT 12.738.961-6 en el Registro Nacional de Instaladores e Inspectores eRNII (https://wlhttp.sec.cl/rnii/public/licencia/qr?o=1cdda99e804b48a2aca00851368f5642).
 
 **P: ¿Qué categorías abarca el equipo de Domingo?**
-R: Domingo cuenta con licencia de Instalador Eléctrico Autorizado SEC Clase B (Técnico en Electricidad y Electrónica Industrial - IP Santo Tomás), idóneo para proyectos residenciales, comerciales, aumentos de carga, tableros y TE1. Para megaproyectos industriales, subestaciones o proyectos de alta tensión sin límite de potencia, su equipo integra a destacados Ingenieros Eléctricos Clase A.
+R: Domingo cuenta con licencia de Instalador Eléctrico Autorizado SEC Clase B (Técnico en Electricidad y Electrónica Industrial - IP Santo Tomás), idóneo para proyectos residenciales, comerciales, aumentos de carga, tableros y TE1 hasta 500 kW. Para megaproyectos industriales, subestaciones o proyectos de alta tensión sin límite de potencia, su equipo integra a destacados Ingenieros Eléctricos Clase A.
 
-**P: ¿Por qué se cae el diferencial aunque no tenga nada enchufado?**
-R: Suele deberse a degradación del aislamiento en cables empotrados, ingreso de humedad por condensación o lluvias en cajas de registro exteriores, o acumulación de corrientes de fuga de fuentes conmutadas (computadores, televisores). Se diagnostica mediante megóhmetro de aislamiento.
+**P: ¿Qué vigencia legal tiene el Certificado TE1 emitido por la SEC?**
+R: El Certificado TE1 no caduca mientras la instalación mantenga las condiciones declaradas en los planos y memoria técnica aprobados. Si se realizan ampliaciones, remodelaciones o aumento de potencia ante Enel/CGE, se debe tramitar un nuevo TE1 de actualización.
+
+**P: ¿Por qué se cae el diferencial de noche o cuando llueve aunque no tenga nada enchufado?**
+R: El interruptor diferencial salta ante fugas superiores a 30 mA para evitar electrocuciones. En días de lluvia o humedad, suele deberse a filtraciones en cajas de derivación exteriores, focos de jardín o degradación del aislamiento en cables antiguos. Se diagnostica con megóhmetro y telurómetro para aislar la falla sin picar muros.
+
+**P: ¿Qué riesgos legales existen al contratar electricistas sin carnet SEC?**
+R: Contratar personal no acreditado anula la cobertura de pólizas de seguro contra incendio ante siniestros eléctricos, impide la aprobación de medidores ante Enel/CGE o patentes comerciales, y expone a multas de la Superintendencia.
+
+**P: ¿Qué documentos se necesitan para tramitar el TE1 con Domingo?**
+R: Rol de la propiedad o número de cliente distribuidora, cédula del propietario o RUT de la empresa, y planos arquitectónicos si existen (si no, Domingo realiza el levantamiento en terreno).
+
+**P: ¿Instalan cargadores de autos eléctricos (Wallbox)?**
+R: Sí, bajo cumplimiento estricto del Pliego Técnico RIC N° 15 de la SEC para marcas como Tesla, BYD, Volvo, BMW y Hyundai, con diferencial tipo A súper inmunizado y aumento de capacidad si corresponde.
+
+**P: ¿Qué marcas de materiales y protecciones utilizan?**
+R: Protecciones y disyuntores de marcas líderes certificadas por la SEC: Schneider Electric, Legrand, ABB y Hager. Conductores de cobre con aislación libre de halógeno (H07Z1-K / EVA).
+
+**P: ¿Emiten boleta o factura y entregan garantía?**
+R: Sí, todos los trabajos se respaldan con boleta o factura legal afecta y garantía técnica por escrito de hasta 12 meses. En certificados TE1 se garantiza el 100% de aprobación sin costos extras.
 
 ---
 
@@ -113,3 +131,4 @@ Para solicitar asistencia inmediata de un eléctrico certificado SEC o tramitar 
 - WhatsApp oficial: +56 9 5769 5395
 - Portal: https://electrico-certificado.cl/
 - Dirección Central: Av. Libertador Bernardo O'Higgins 1302, Santiago, Chile
+- Desarrollado y optimizado por: REW (https://www.rew.cl)

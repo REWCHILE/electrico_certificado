@@ -7,6 +7,41 @@
 
 $secCardMode = $secCardMode ?? 'full'; // 'full' o 'compact'
 ?>
+<style>
+/* Inline fallback styling for SEC Verification Card (Anti-cache guarantee) */
+.sec-verify-card { background: #FFFFFF; border: 1px solid rgba(35, 87, 164, 0.2); border-radius: 20px; padding: 32px 36px; margin: 36px 0; box-shadow: 0 4px 20px -2px rgba(15, 23, 42, 0.06), 0 16px 36px -4px rgba(35, 87, 164, 0.08); position: relative; overflow: hidden; }
+.sec-verify-card::before { content: ""; position: absolute; top: 0; left: 0; right: 0; height: 4px; background: linear-gradient(90deg, #1E40AF 0%, #2563EB 35%, #F37021 100%); }
+.sec-verify-header { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 16px; padding-bottom: 20px; border-bottom: 1px solid #E2E8F0; margin-bottom: 24px; }
+.sec-verify-brand { display: flex; align-items: center; gap: 14px; }
+.sec-seal-circle { width: 48px; height: 48px; background: linear-gradient(135deg, #1E40AF 0%, #0F2B66 100%); color: #FFFFFF; font-family: 'Cardo', Georgia, serif; font-weight: 900; font-size: 1.2rem; letter-spacing: 1px; display: flex; align-items: center; justify-content: center; border-radius: 50%; border: 2px solid #FFFFFF; box-shadow: 0 4px 14px rgba(30, 64, 175, 0.35); flex-shrink: 0; }
+.sec-seal-sub { display: block; font-size: 0.76rem; text-transform: uppercase; font-weight: 800; color: #2357A4; letter-spacing: 0.8px; }
+.sec-verify-title { font-family: 'Cardo', Georgia, serif; font-size: 1.3rem; font-weight: 800; color: #080D1A; line-height: 1.2; margin: 2px 0 0; }
+.sec-status-badge { display: inline-flex; align-items: center; gap: 10px; background: rgba(16, 185, 129, 0.1); color: #059669; border: 1px solid rgba(16, 185, 129, 0.35); padding: 8px 16px; border-radius: 9999px; font-size: 0.84rem; font-weight: 700; }
+.sec-status-beacon { width: 10px; height: 10px; background-color: #10B981; border-radius: 50%; position: relative; box-shadow: 0 0 10px #10B981; }
+.sec-verify-body { display: grid; grid-template-columns: auto 1fr; gap: 36px; align-items: center; }
+@media (max-width: 860px) { .sec-verify-body { grid-template-columns: 1fr; justify-items: center; } }
+.sec-qr-frame { position: relative; padding: 12px; background: #FFFFFF; border-radius: 18px; box-shadow: 0 10px 30px rgba(15, 23, 42, 0.12); border: 1px solid #E2E8F0; display: inline-block; }
+.corner-bracket { position: absolute; width: 18px; height: 18px; border-color: #2357A4; border-style: solid; pointer-events: none; }
+.corner-bracket.top-left { top: 4px; left: 4px; border-width: 3px 0 0 3px; border-top-left-radius: 8px; }
+.corner-bracket.top-right { top: 4px; right: 4px; border-width: 3px 3px 0 0; border-top-right-radius: 8px; }
+.corner-bracket.bottom-left { bottom: 4px; left: 4px; border-width: 0 0 3px 3px; border-bottom-left-radius: 8px; }
+.corner-bracket.bottom-right { bottom: 4px; right: 4px; border-width: 0 3px 3px 0; border-bottom-right-radius: 8px; }
+.sec-qr-link { display: block; position: relative; overflow: hidden; border-radius: 10px; background: #FFFFFF; }
+.sec-qr-img { width: 190px; height: 190px; object-fit: contain; display: block; }
+.sec-qr-caption { font-size: 0.78rem; color: #64748B; margin-top: 10px; display: flex; align-items: center; justify-content: center; gap: 6px; font-weight: 600; text-align: center; }
+.sec-data-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px 24px; margin-bottom: 24px; }
+@media (max-width: 580px) { .sec-data-grid { grid-template-columns: 1fr; gap: 12px; } }
+.sec-data-item { display: flex; flex-direction: column; gap: 3px; }
+.sec-data-item:last-child { grid-column: 1 / -1; background: #F8FAFC; padding: 12px 16px; border-radius: 8px; border: 1px solid #E2E8F0; }
+.sec-data-label { font-size: 0.76rem; text-transform: uppercase; font-weight: 700; color: #64748B; letter-spacing: 0.5px; }
+.sec-data-val { font-size: 1rem; color: #0F172A; font-weight: 700; }
+.sec-data-desc { font-size: 0.88rem; color: #0F172A; line-height: 1.5; }
+.badge-class-pill { display: inline-block; background: rgba(35, 87, 164, 0.12); color: #2357A4; padding: 2px 8px; border-radius: 4px; font-weight: 800; font-size: 0.82rem; border: 1px solid rgba(35, 87, 164, 0.25); margin-right: 4px; }
+.sec-verify-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 14px; margin-bottom: 16px; }
+.btn-sec-verify { background: linear-gradient(135deg, #1E40AF 0%, #0F2B66 100%); color: #FFFFFF !important; border: 1px solid rgba(255, 255, 255, 0.22); box-shadow: 0 4px 18px rgba(30, 64, 175, 0.35); padding: 13px 24px; font-weight: 800; font-size: 0.95rem; border-radius: 8px; display: inline-flex; align-items: center; gap: 10px; text-decoration: none; }
+.btn-whatsapp-subtle { background: #FFFFFF; color: #15803D; border: 1.5px solid #22C55E; padding: 12px 22px; font-weight: 700; font-size: 0.92rem; border-radius: 8px; display: inline-flex; align-items: center; gap: 10px; text-decoration: none; }
+.sec-verify-legal { display: flex; align-items: center; gap: 8px; font-size: 0.78rem; color: #64748B; line-height: 1.4; }
+</style>
 <div class="sec-verify-card <?= $secCardMode === 'compact' ? 'is-compact' : '' ?>">
     <!-- Encabezado de la Acreditación Oficial -->
     <div class="sec-verify-header">

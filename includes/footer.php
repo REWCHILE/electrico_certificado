@@ -99,7 +99,7 @@
             <!-- Barra Inferior de Copyright & Legal -->
             <div class="footer-bottom">
                 <div>
-                    &copy; <?= date('Y') ?> <?= SITE_NAME ?>. Todos los derechos reservados.
+                    &copy; <?= date('Y') ?> Domingo Isain. Todos los derechos reservados. Desarrollado por <a href="https://www.rew.cl" target="_blank" rel="noopener" style="color: var(--volt-orange); font-weight: 700; text-decoration: underline;">REW (www.rew.cl)</a>
                 </div>
                 <div style="display: flex; gap: 20px;">
                     <a href="<?= BASE_URL ?>/faq">FAQ</a>

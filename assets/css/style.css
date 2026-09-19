@@ -251,6 +251,7 @@ button, input, select, textarea {
   letter-spacing: -0.5px;
   color: var(--volt-dark);
   min-width: 0;
+  flex-shrink: 0;
 }
 
 .site-header.is-dark .logo {
@@ -345,13 +346,16 @@ button, input, select, textarea {
   white-space: nowrap;
 }
 
+@media (max-width: 1360px) {
+  .logo-sec-prefix {
+    display: none;
+  }
+}
+
 @media (max-width: 768px) {
   .logo-sec-tag {
     font-size: clamp(0.58rem, 2.2vw, 0.68rem);
     letter-spacing: 0.4px;
-  }
-  .logo-sec-prefix {
-    display: none;
   }
 }
 
@@ -367,27 +371,30 @@ button, input, select, textarea {
   display: none;
 }
 
-@media (min-width: 992px) {
+@media (min-width: 1040px) {
   .nav-menu {
     display: flex;
     align-items: center;
-    gap: 28px;
+    gap: clamp(10px, 1.2vw, 22px);
     list-style: none;
+    flex-shrink: 1;
   }
 }
 
 .nav-item {
   position: relative;
+  flex-shrink: 0;
 }
 
 .nav-link {
-  font-size: 0.95rem;
+  font-size: clamp(0.82rem, 0.88vw, 0.92rem);
   font-weight: 600;
   color: var(--text-dark);
-  padding: 8px 0;
+  padding: 8px 2px;
   display: flex;
   align-items: center;
-  gap: 5px;
+  gap: 4px;
+  white-space: nowrap;
 }
 
 .site-header.is-dark .nav-link {
@@ -487,7 +494,12 @@ button, input, select, textarea {
   text-align: right;
 }
 
-@media (min-width: 1100px) {
+/* Header Phone Box */
+.header-phone-box {
+  display: none;
+}
+
+@media (min-width: 1250px) {
   .header-phone-box {
     display: flex;
     flex-direction: column;
@@ -540,7 +552,7 @@ button, input, select, textarea {
   }
 }
 
-@media (min-width: 992px) {
+@media (min-width: 1040px) {
   .mobile-toggle {
     display: none;
   }
@@ -2659,7 +2671,7 @@ button, input, select, textarea {
 
 .btn-sec-verify {
   background: linear-gradient(135deg, #1E40AF 0%, #0F2B66 100%);
-  color: #FFFFFF !0important;
+  color: #FFFFFF !important;
   border: 1px solid rgba(255, 255, 255, 0.22);
   box-shadow: 0 4px 18px rgba(30, 64, 175, 0.35);
   padding: 13px 24px;

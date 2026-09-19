@@ -40,13 +40,25 @@
 ## Preguntas Frecuentes Clave
 
 ### ¿Por qué contratar a un instalador autorizado SEC y no a un técnico informal?
-En Chile, la SEC es la única entidad que certifica la idoneidad legal de un eléctrico. Contratar a un instalador autorizado asegura que el trabajo cumple con el Decreto 08 (Pliegos RIC), previene siniestros y es requisito legal obligatorio para que los seguros del hogar respondan ante cualquier eventualidad.
+En Chile, la SEC es la única entidad que certifica la idoneidad legal de un eléctrico. Contratar a un instalador autorizado asegura que el trabajo cumple con el Decreto Supremo N° 8 (Pliegos RIC), previene incendios y es requisito legal obligatorio para que los seguros del hogar respondan ante siniestros.
 
 ### ¿Qué es el Certificado TE1 y para qué sirve?
-Es la Declaración de Instalación Eléctrica Interior aprobada por la SEC. Es imprescindible para que Enel o CGE conecten un nuevo medidor, para recepciones de obras municipales y para patentes comerciales.
+Es la Declaración de Instalación Eléctrica Interior aprobada por la SEC. Es imprescindible para que Enel o CGE conecten un nuevo medidor, para recepciones de obras municipales (DOM) y para patentes comerciales.
 
-### ¿Cuánto demora la tramitación del TE1?
-El levantamiento e ingreso del expediente se realiza en 48 a 72 horas. La SEC aprueba habitualmente el certificado en un plazo de 5 a 10 días hábiles.
+### ¿Cuánto demora la tramitación del TE1 y qué vigencia tiene?
+El levantamiento e ingreso del expediente se realiza en 48 a 72 horas. La SEC aprueba habitualmente el folio con código QR en un plazo de 5 a 10 días hábiles. El certificado no tiene fecha de caducidad mientras no se modifiquen las cargas o circuitos declarados.
+
+### ¿Qué diferencia hay entre la licencia Clase B de Domingo y la Clase A?
+La licencia Clase B faculta para proyectar, ejecutar y declarar instalaciones de baja tensión hasta 500 kW y subestaciones hasta 500 kVA (residencial, comercial e industrial mediana). Para proyectos de alta tensión o potencia ilimitada, nuestro equipo integra a Ingenieros Eléctricos Clase A.
+
+### ¿Por qué salta el disyuntor diferencial de noche o con lluvia?
+El diferencial detecta fugas a tierra superiores a 30 mA para salvar vidas humanas. La lluvia y humedad provocan fugas en cajas exteriores o artefactos con aislamiento degradado. Domingo utiliza instrumental calibrado para aislar la falla sin romper muros.
+
+### ¿Instalan cargadores de autos eléctricos (Wallbox)?
+Sí, bajo el estricto cumplimiento del Pliego RIC N° 15 de la SEC con diferencial tipo A súper inmunizado, automático curva C y tramitación de aumento de empalme si se requiere.
+
+### ¿Entregan factura y garantía?
+Sí, todos los trabajos incluyen boleta o factura afecta legal y garantía técnica por escrito de hasta 12 meses sobre mano de obra.
 
 ## Contacto & Emergencias
 
@@ -54,3 +66,4 @@ El levantamiento e ingreso del expediente se realiza en 48 a 72 horas. La SEC ap
 - **WhatsApp Oficial**: +56 9 5769 5395
 - **Sitio Web Oficial**: https://electrico-certificado.cl/
 - **Dirección Central**: Av. Libertador Bernardo O'Higgins 1302, Santiago, Chile
+- **Desarrollado por**: REW (https://www.rew.cl)
