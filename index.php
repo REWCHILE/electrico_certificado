@@ -135,7 +135,7 @@ require_once __DIR__ . '/includes/header.php';
 
                 <div style="display: flex; flex-wrap: wrap; gap: 14px;">
                     <a href="<?= BASE_URL ?>/nosotros" class="btn btn-volt">Conocer Más Sobre Domingo →</a>
-                    <a href="<?= SEC_VERIFICATION_URL ?>" target="_blank" rel="noopener" class="btn btn-sec-verify">
+                    <a href="<?= SEC_VERIFICATION_URL ?>" target="_blank" rel="noopener noreferrer" referrerpolicy="no-referrer" class="btn btn-sec-verify">
                         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><polyline points="9 12 11 14 15 10"/></svg>
                         Verificar Licencia en SEC.cl ↗
                     </a>

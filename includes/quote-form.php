@@ -15,7 +15,7 @@ $formSubtitle = $formSubtitle ?? 'Completa los datos y se abrirá tu WhatsApp co
             <div>
                 <strong style="display: block; font-family: var(--font-display); font-size: 1.05rem; color: var(--volt-dark);">Domingo Isain Plaza Caamaño</strong>
                 <span style="font-size: 0.78rem; color: var(--brand-blue); font-weight: 700; text-transform: uppercase;">
-                    <?= SEC_CREDENTIAL ?> • <a href="<?= SEC_VERIFICATION_URL ?>" target="_blank" rel="noopener" style="color: var(--volt-orange); text-decoration: underline;">Verificar en SEC.cl ↗</a>
+                    <?= SEC_CREDENTIAL ?> • <a href="<?= SEC_VERIFICATION_URL ?>" target="_blank" rel="noopener noreferrer" referrerpolicy="no-referrer" style="color: var(--volt-orange); text-decoration: underline;">Verificar en SEC.cl ↗</a>
                 </span>
             </div>
         </div>

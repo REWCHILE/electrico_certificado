@@ -45,7 +45,7 @@ require_once __DIR__ . '/../includes/header.php';
                     <a href="https://wa.me/<?= WHATSAPP_NUMBER ?>?text=<?= urlencode('Hola Domingo, necesito tramitar o consultar por un Certificado TE1 SEC.') ?>" target="_blank" rel="noopener" class="btn btn-volt btn-lg">
                         ⚡ Cotizar TE1 por WhatsApp
                     </a>
-                    <a href="<?= SEC_VERIFICATION_URL ?>" target="_blank" rel="noopener" class="btn btn-sec-verify btn-lg">
+                    <a href="<?= SEC_VERIFICATION_URL ?>" target="_blank" rel="noopener noreferrer" referrerpolicy="no-referrer" class="btn btn-sec-verify btn-lg">
                         Verificar Licencia SEC ↗
                     </a>
                     <a href="tel:<?= PHONE_RAW ?>" class="btn btn-outline btn-lg" style="color: #FFF; border-color: rgba(255,255,255,0.3);">

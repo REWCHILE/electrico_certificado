@@ -60,7 +60,7 @@ require_once __DIR__ . '/includes/header.php';
 
                 <div style="display: flex; flex-wrap: wrap; gap: 14px; margin-bottom: 10px;">
                     <a href="https://wa.me/<?= WHATSAPP_NUMBER ?>?text=<?= urlencode('Hola Domingo, quiero agendar una visita o consultar un trabajo eléctrico.') ?>" target="_blank" rel="noopener" class="btn btn-volt">Hablar con Domingo por WhatsApp</a>
-                    <a href="<?= SEC_VERIFICATION_URL ?>" target="_blank" rel="noopener" class="btn btn-sec-verify">Verificar en SEC.cl ↗</a>
+                    <a href="<?= SEC_VERIFICATION_URL ?>" target="_blank" rel="noopener noreferrer" referrerpolicy="no-referrer" class="btn btn-sec-verify">Verificar en SEC.cl ↗</a>
                     <a href="tel:<?= PHONE_RAW ?>" class="btn btn-outline">📞 <?= PHONE_DISPLAY ?></a>
                 </div>
             </div>
@@ -79,7 +79,7 @@ require_once __DIR__ . '/includes/header.php';
                 <p style="font-size: 0.92rem; color: var(--text-muted); line-height: 1.6;">
                     Acreditación oficial verificable en tiempo real en la Superintendencia (SEC) con RUT <strong><?= SEC_RUT ?></strong> o escaneando el código QR.
                 </p>
-                <a href="<?= SEC_VERIFICATION_URL ?>" target="_blank" rel="noopener" style="display: inline-flex; align-items: center; gap: 4px; color: var(--brand-blue); font-weight: 700; font-size: 0.88rem; margin-top: 10px;">
+                <a href="<?= SEC_VERIFICATION_URL ?>" target="_blank" rel="noopener noreferrer" referrerpolicy="no-referrer" style="display: inline-flex; align-items: center; gap: 4px; color: var(--brand-blue); font-weight: 700; font-size: 0.88rem; margin-top: 10px;">
                     Comprobar en SEC.cl ↗
                 </a>
             </div>
