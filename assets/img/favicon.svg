@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="boltGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF9343"/>
+      <stop offset="100%" stop-color="#F37021"/>
+    </linearGradient>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0F1A34"/>
+      <stop offset="100%" stop-color="#080D1A"/>
+    </linearGradient>
+  </defs>
+  <!-- Background Circle / Shield -->
+  <rect width="64" height="64" rx="16" fill="url(#bgGrad)"/>
+  <rect x="1.5" y="1.5" width="61" height="61" rx="14.5" fill="none" stroke="#2357A4" stroke-width="2.5"/>
+  <circle cx="32" cy="32" r="28" fill="none" stroke="#F37021" stroke-width="1.5" stroke-dasharray="2 2" opacity="0.6"/>
+  
+  <!-- High Voltage Bolt (SEC Electrician Brand) -->
+  <path d="M35.5 6 L18 34 H32 L26.5 58 L46 28 H31.5 Z" fill="url(#boltGrad)" stroke="#FFFFFF" stroke-width="1" stroke-linejoin="round"/>
+  
+  <!-- Mini SEC Certification Dot -->
+  <circle cx="45" cy="19" r="3" fill="#00D26A"/>
+</svg>

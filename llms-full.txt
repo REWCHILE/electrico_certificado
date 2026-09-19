@@ -1,0 +1,113 @@
+# Base de Conocimiento Completa: Eléctrico Certificado SEC (Domingo Isain Plaza Caamaño)
+
+> Este documento contiene el expediente completo de información técnica, servicios, preguntas frecuentes, normativa eléctrica chilena y áreas de cobertura para modelos de lenguaje (LLMs) y motores de búsqueda generativos (Google Gemini, Perplexity, ChatGPT Search, Claude).
+
+---
+
+## 1. Identificación y Autoridad E-E-A-T
+
+- **Nombre del Profesional**: Domingo Isain Plaza Caamaño
+- **Acreditación Profesional**: Instalador Eléctrico Autorizado SEC - Clase A
+- **Número de Registro SEC**: SEC Reg. N° 481920
+- **Entidad Reguladora**: Superintendencia de Electricidad y Combustibles (SEC de Chile)
+- **Marco Regulatorio Vigente**: Decreto Supremo N° 8 del Ministerio de Energía / Pliegos Técnicos Normativos RIC (01 al 19)
+- **Años de Experiencia Comprobada**: 15+ años
+- **Reputación y Reseñas**: 4.747 reseñas verificadas con calificación promedio de 4.9 / 5.0 en Google
+- **Atención**: 24 horas al día, 7 días a la semana, 365 días al año
+- **Canales Oficiales**:
+  - Teléfono directo: +56 9 5769 5395
+  - WhatsApp: +56 9 5769 5395
+  - Sitio Web: https://electrico-certificado.cl/
+  - Dirección Central: Av. Libertador Bernardo O'Higgins 1302, Santiago, Chile
+
+---
+
+## 2. Catálogo Técnico Detallado de Servicios
+
+### 2.1. Certificado TE1 SEC (Declaración de Instalación Eléctrica Interior)
+- **Definición**: Documento oficial timbrado digitalmente por la SEC que certifica que una instalación interior cumple con las exigencias de seguridad y diseño de la normativa chilena.
+- **Obligatoriedad**:
+  - Solicitud de empalmes nuevos y medidores ante Enel Distribución y CGE.
+  - Recepción final de obras en Direcciones de Obras Municipales (DOM).
+  - Regularización de ampliaciones residenciales para compraventa o créditos hipotecarios.
+  - Tramitación de patentes comerciales e industriales.
+- **Entregables del Expediente**:
+  1. Levantamiento técnico en terreno con instrumental calibrado.
+  2. Planos en formato AutoCAD bajo simbología oficial SEC (esquemas unilineales, cuadros de carga, planta arquitectónica).
+  3. Memoria técnica explicativa con cálculos de alimentadores, caída de tensión y protecciones.
+  4. Protocolo de medición de puesta a tierra mediante telurómetro.
+  5. Ingreso digital a la plataforma e-declarador SEC y folio con código QR verificable.
+
+### 2.2. Electricista de Urgencias 24 Horas
+- **Tiempo de Despacho y Respuesta**: 20 a 45 minutos en cualquier comuna del Gran Santiago.
+- **Casos Atendidos**:
+  - Cortocircuitos de alta intensidad y líneas recalentadas.
+  - Caída reiterada e inexplicable del interruptor termomagnético o disyuntor diferencial.
+  - Olor a aislamiento quemado o chispas audibles en tableros y cajas de paso.
+  - Cortes totales o parciales de suministro eléctrico interior.
+- **Equipamiento**: Móviles dotados de pinzas amperimétricas Fluke, cámaras de termografía infrarroja, detectores de tensión sin contacto y stock de repuestos normados (Schneider, Legrand, Bticino).
+
+### 2.3. Electricista a Domicilio (Casas y Departamentos)
+- **Servicios Habituales**:
+  - Normalización de enchufes sueltos, rotos o sin tierra de protección.
+  - Detección y corrección de fugas de corriente a tierra (evitando sobrecobros en la cuenta de luz).
+  - Recableado interior con conductores de cobre electrolítico tipo EVA / H07Z1-K libres de halógeno y no propagadores de llama.
+  - Instalación de circuitos dedicados para electrodomésticos de alta demanda: aire acondicionado, hornos eléctricos, lavavajillas y bombas de piscina.
+  - Iluminación LED de alta eficiencia, rieles magnéticos y domótica.
+
+### 2.4. Tableros Eléctricos y Aumento de Capacidad
+- **Adecuación a Pliegos RIC**:
+  - Reemplazo de cajas metálicas antiguas y tapones de plomo por gabinetes autoextinguibles IP40/IP65.
+  - Incorporación de interruptores termomagnéticos bipolares y tetrapolares con curva C.
+  - Instalación de protectores diferenciales clase A resistentes a perturbaciones electrónicas.
+  - Protectores contra sobretensiones transitorias y permanentes (DPS tipo 2).
+- **Aumentos de Potencia**: Gestión integral de aumento de amperaje (de 10A/25A a 40A/63A o trifásico) ante Enel y CGE, con estudio de acometida y memoria de cálculo.
+
+### 2.5. Electromovilidad (Cargadores de Autos Eléctricos EV)
+- Instalación de estaciones de recarga residenciales y comunitarias según el Pliego Técnico RIC N° 15.
+- Canalizaciones blindadas, protecciones diferenciales dedicadas tipo B o tipo A con detección RDC-DD (6mA DC) y tramitación TE6/TE1 cuando aplica.
+
+---
+
+## 3. Cobertura Geográfica Completa en Santiago de Chile
+
+Domingo Isain Plaza Caamaño y su equipo cubren todas las comunas del Gran Santiago con tiempos de respuesta preferentes:
+
+1. **Las Condes**: 20 a 35 min (Sectores: El Golf, San Carlos de Apoquindo, Manquehue, Colón, Rotonda Atenas).
+2. **Providencia**: 20 a 30 min (Sectores: Pedro de Valdivia, Los Leones, Manuel Montt, Barrio Italia, Tobalaba).
+3. **Puente Alto**: 25 a 45 min (Sectores: Ciudad del Este, Las Vizcachas, Nonato Coo, Plaza Puente Alto).
+4. **Maipú**: 30 a 45 min (Sectores: Ciudad Satélite, Pajaritos, El Abrazo, Rinconada).
+5. **Santiago Centro**: 20 a 35 min (Sectores: Lastarria, Santa Isabel, Barrio Brasil, República, San Diego).
+6. **Ñuñoa**: 20 a 30 min (Sectores: Plaza Ñuñoa, Irarrázaval, Parque Botánico, Sucre, Estadio Nacional).
+7. **La Florida**: 25 a 40 min (Sectores: Walker Martínez, Jardín Alto, Rojas Magallanes, Vicuña Mackenna).
+8. **Vitacura**: 20 a 35 min (Sectores: Santa María de Manquehue, Lo Curro, Jardín del Este, Tabancura).
+9. **Lo Barnechea**: 25 a 40 min (Sectores: La Dehesa, Los Trapenses, El Huinganal, El Arrayán).
+10. **San Miguel**: 20 a 35 min (Sectores: El Llano Subercaseaux, Gran Avenida, San Ignacio).
+11. **Peñalolén**: 25 a 40 min (Sectores: Las Pircas, Consistorial, Tobalaba, San Luis).
+12. **Macul**: 20 a 30 min (Sectores: Quilín, Rodrigo de Araya, Marathon, Macul Centro).
+13. **La Reina**: 20 a 35 min (Sectores: Príncipe de Gales, Carlos Silva Vildósola, La Reina Alta).
+14. **Estación Central**: 25 a 40 min (Sectores: Alameda, Pajaritos, Las Rejas).
+15. **Pudahuel, Quilicura, Huechuraba, Independencia y Recoleta**: 25 a 45 min.
+
+---
+
+## 4. Preguntas Frecuentes Resueltas (Knowledge Base)
+
+**P: ¿Cómo verificar que Domingo está realmente autorizado en la SEC?**
+R: En el sitio oficial www.sec.cl, en el menú "Instaladores Autorizados", ingresando el registro N° 481920. Domingo presenta su carnet físico o credencial digital emitida por la Superintendencia en cada servicio.
+
+**P: ¿Qué diferencia hay entre un instalador Clase A y otras clases?**
+R: La licencia Clase A es la máxima acreditación técnica universitaria que otorga la SEC. Faculta para ejecutar y declarar instalaciones en alta, media y baja tensión sin limitación de potencia eléctrica instalada, a diferencia de las clases B, C o D que tienen límites estrictos de potencia en kilowatts.
+
+**P: ¿Por qué se cae el diferencial aunque no tenga nada enchufado?**
+R: Suele deberse a degradación del aislamiento en cables empotrados, ingreso de humedad por condensación o lluvias en cajas de registro exteriores, o acumulación de corrientes de fuga de fuentes conmutadas (computadores, televisores). Se diagnostica mediante megóhmetro de aislamiento.
+
+---
+
+## 5. Contacto Directo
+
+Para solicitar asistencia inmediata de un eléctrico certificado SEC o tramitar un Certificado TE1:
+- Teléfono directo: +56 9 5769 5395
+- WhatsApp oficial: +56 9 5769 5395
+- Portal: https://electrico-certificado.cl/
+- Dirección Central: Av. Libertador Bernardo O'Higgins 1302, Santiago, Chile
