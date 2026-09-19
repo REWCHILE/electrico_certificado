@@ -93,7 +93,8 @@ body {
   display: flex;
   flex-direction: column;
   overflow-x: hidden;
-  padding-bottom: 75px; /* Spacing for sticky mobile bar */
+  max-width: 100%;
+  padding-bottom: calc(72px + env(safe-area-inset-bottom, 0px)); /* Spacing for sticky mobile bar */
 }
 
 @media (min-width: 769px) {
@@ -126,6 +127,13 @@ button, input, select, textarea {
   margin-right: auto;
   padding-left: 20px;
   padding-right: 20px;
+}
+
+@media (max-width: 576px) {
+  .container {
+    padding-left: 14px;
+    padding-right: 14px;
+  }
 }
 
 /* --- Top Utility Bar --- */
@@ -177,6 +185,20 @@ button, input, select, textarea {
   color: var(--text-white);
 }
 
+@media (max-width: 768px) {
+  .top-bar {
+    padding: 6px 0;
+    font-size: 0.76rem;
+  }
+  .top-bar .container {
+    justify-content: center;
+    gap: 6px 12px;
+  }
+  .top-bar-right {
+    display: none;
+  }
+}
+
 /* --- Header & Navigation --- */
 .site-header {
   position: sticky;
@@ -206,7 +228,15 @@ button, input, select, textarea {
 
 @media (max-width: 768px) {
   .header-inner {
-    height: 76px;
+    height: 70px;
+    gap: 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  .header-inner {
+    height: 64px;
+    gap: 6px;
   }
 }
 
@@ -220,6 +250,7 @@ button, input, select, textarea {
   font-size: 1.45rem;
   letter-spacing: -0.5px;
   color: var(--volt-dark);
+  min-width: 0;
 }
 
 .site-header.is-dark .logo {
@@ -236,10 +267,23 @@ button, input, select, textarea {
   transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.3s ease;
 }
 
-@media (max-width: 576px) {
+@media (max-width: 768px) {
+  .logo {
+    gap: 10px;
+  }
   .logo-badge-img {
-    width: 54px;
-    height: 54px;
+    width: 48px;
+    height: 48px;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo {
+    gap: 8px;
+  }
+  .logo-badge-img {
+    width: 42px;
+    height: 42px;
   }
 }
 
@@ -264,12 +308,28 @@ button, input, select, textarea {
   display: flex;
   flex-direction: column;
   line-height: 1.15;
+  min-width: 0;
 }
 
 .logo-main {
   font-size: clamp(1.2rem, 2vw, 1.48rem);
   font-weight: 900;
   letter-spacing: -0.4px;
+  white-space: nowrap;
+}
+
+@media (max-width: 768px) {
+  .logo-main {
+    font-size: clamp(1rem, 3.8vw, 1.25rem);
+    letter-spacing: -0.3px;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo-main {
+    font-size: 1.05rem;
+    letter-spacing: -0.2px;
+  }
 }
 
 .logo-main span {
@@ -282,6 +342,24 @@ button, input, select, textarea {
   letter-spacing: 1px;
   color: var(--badge-sec-gold);
   font-weight: 700;
+  white-space: nowrap;
+}
+
+@media (max-width: 768px) {
+  .logo-sec-tag {
+    font-size: clamp(0.58rem, 2.2vw, 0.68rem);
+    letter-spacing: 0.4px;
+  }
+  .logo-sec-prefix {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo-sec-tag {
+    font-size: 0.58rem;
+    letter-spacing: 0.3px;
+  }
 }
 
 /* Nav Menu */
@@ -372,6 +450,36 @@ button, input, select, textarea {
   display: flex;
   align-items: center;
   gap: 14px;
+  flex-shrink: 0;
+}
+
+@media (max-width: 768px) {
+  .header-actions {
+    gap: 8px;
+  }
+
+  .header-cta-text {
+    display: none;
+  }
+
+  .header-cta-btn {
+    width: 42px;
+    height: 42px;
+    padding: 0;
+    border-radius: var(--radius-sm);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  /* En móviles, ocultar el botón CTA de la cabecera superior:
+     el usuario tiene la barra inferior fija siempre visible con WhatsApp y llamada directa */
+  .header-cta-btn {
+    display: none !important;
+  }
 }
 
 .header-phone-box {
@@ -417,11 +525,19 @@ button, input, select, textarea {
   border-radius: var(--radius-sm);
   color: var(--text-dark);
   cursor: pointer;
+  flex-shrink: 0;
 }
 
 .site-header.is-dark .mobile-toggle {
   border-color: var(--volt-dark-border);
   color: var(--text-white);
+}
+
+@media (max-width: 480px) {
+  .mobile-toggle {
+    width: 40px;
+    height: 40px;
+  }
 }
 
 @media (min-width: 992px) {
@@ -1166,11 +1282,17 @@ button, input, select, textarea {
 
 .comunas-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 1fr;
   gap: 14px;
 }
 
-@media (min-width: 640px) {
+@media (min-width: 480px) {
+  .comunas-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 768px) {
   .comunas-grid {
     grid-template-columns: repeat(3, 1fr);
   }
@@ -1841,18 +1963,21 @@ button, input, select, textarea {
   position: fixed;
   bottom: 0;
   left: 0;
+  right: 0;
   width: 100%;
-  height: 66px;
-  background: rgba(8, 13, 26, 0.9);
+  box-sizing: border-box;
+  height: calc(62px + env(safe-area-inset-bottom, 0px));
+  background: rgba(8, 13, 26, 0.94);
   backdrop-filter: blur(20px) saturate(180%);
   -webkit-backdrop-filter: blur(20px) saturate(180%);
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
   display: flex;
   align-items: center;
-  justify-content: space-around;
-  padding: 8px 12px;
+  justify-content: center;
+  gap: 8px;
+  padding: 7px 10px calc(7px + env(safe-area-inset-bottom, 0px)) 10px;
   z-index: 9999;
-  box-shadow: 0 -4px 30px rgba(0, 0, 0, 0.5), inset 0 1px 0 rgba(255, 255, 255, 0.15);
+  box-shadow: 0 -4px 30px rgba(0, 0, 0, 0.55), inset 0 1px 0 rgba(255, 255, 255, 0.18);
 }
 
 @media (min-width: 769px) {
@@ -1862,34 +1987,57 @@ button, input, select, textarea {
 }
 
 .mobile-action-btn {
-  flex: 1;
-  display: flex;
+  flex: 1 1 0;
+  min-width: 0;
+  max-width: 50%;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
-  gap: 8px;
-  height: 48px;
+  gap: 6px;
+  height: 46px;
   border-radius: var(--radius-sm);
   font-weight: 800;
-  font-size: 0.88rem;
+  font-size: clamp(0.74rem, 3.2vw, 0.88rem);
+  letter-spacing: -0.01em;
   color: #FFFFFF;
-  margin: 0 4px;
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.3);
-  transition: transform 0.15s ease;
+  padding: 0 8px;
+  margin: 0;
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25), inset 0 1px 0 rgba(255, 255, 255, 0.3);
+  text-decoration: none;
+  white-space: nowrap;
+  overflow: hidden;
+  box-sizing: border-box;
+  transition: transform 0.15s ease, filter 0.15s ease;
+}
+
+.mobile-action-btn svg {
+  flex-shrink: 0;
+  width: 17px;
+  height: 17px;
+}
+
+.mobile-btn-text {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: inline-block;
+  min-width: 0;
 }
 
 .mobile-action-btn:active {
   transform: scale(0.97);
+  filter: brightness(0.95);
 }
 
 .mobile-call-btn {
-  background: var(--volt-orange);
-  box-shadow: 0 2px 10px var(--volt-orange-glow);
+  background: linear-gradient(180deg, #FF7A24 0%, #E65A08 100%);
+  box-shadow: 0 2px 12px var(--volt-orange-glow), inset 0 1px 0 rgba(255, 255, 255, 0.35);
 }
 
 .mobile-whatsapp-btn {
-  background: #25D366;
-  box-shadow: 0 2px 10px rgba(37, 211, 102, 0.35);
+  background: linear-gradient(180deg, #2ED76E 0%, #1DA851 100%);
+  box-shadow: 0 2px 12px rgba(37, 211, 102, 0.4), inset 0 1px 0 rgba(255, 255, 255, 0.35);
 }
 
 /* --- MOBILE DRAWER NAVIGATION --- */
@@ -2105,6 +2253,16 @@ button, input, select, textarea {
   gap: 8px;
   box-shadow: 0 4px 18px rgba(0, 0, 0, 0.25);
   transition: all 0.25s ease;
+  max-width: 90%;
+  box-sizing: border-box;
+}
+
+@media (max-width: 480px) {
+  .voltedge-card-tab {
+    padding: 10px 16px;
+    font-size: clamp(0.86rem, 3.4vw, 0.98rem);
+    max-width: 88%;
+  }
 }
 
 .voltedge-card:hover .voltedge-card-tab {

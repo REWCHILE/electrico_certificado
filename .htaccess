@@ -5,7 +5,6 @@
 
 Options -Indexes +FollowSymLinks -MultiViews
 RewriteEngine On
-RewriteBase /electrico-certificado/
 
 # 1. Sitemap XML
 RewriteRule ^sitemap\.xml$ sitemap.php [L]
