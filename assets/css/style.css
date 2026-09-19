@@ -1881,8 +1881,6 @@ button, input, select, textarea {
 .mobile-action-btn:active {
   transform: scale(0.97);
 }
-  text-align: center;
-}
 
 .mobile-call-btn {
   background: var(--volt-orange);
@@ -1971,4 +1969,219 @@ button, input, select, textarea {
 @keyframes fadeIn {
   from { opacity: 0; transform: translateY(6px); }
   to { opacity: 1; transform: translateY(0); }
+}
+
+/* --- VOLTEDGE SIGNATURE VISUAL SERVICES GRID --- */
+.voltedge-services-section {
+  padding: 85px 0;
+  background: #090E17;
+  color: #FFFFFF;
+  position: relative;
+  overflow: hidden;
+}
+
+.voltedge-services-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.15), transparent);
+}
+
+.voltedge-services-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+}
+
+@media (min-width: 600px) {
+  .voltedge-services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .voltedge-services-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* Base Service Card */
+.voltedge-card {
+  position: relative;
+  height: 310px;
+  border-radius: 20px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-decoration: none;
+  background: #0D1424;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+  transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.35s ease;
+}
+
+.voltedge-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.55), 0 0 0 1px rgba(243, 112, 33, 0.3);
+}
+
+.voltedge-card-img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.65s cubic-bezier(0.16, 1, 0.3, 1), filter 0.3s ease;
+  filter: brightness(0.92) contrast(102%);
+}
+
+.voltedge-card:hover .voltedge-card-img {
+  transform: scale(1.06);
+  filter: brightness(1.02);
+}
+
+/* Top-Right Corner Notch */
+.voltedge-card-notch {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 58px;
+  height: 58px;
+  background: #090E17;
+  border-bottom-left-radius: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 3;
+}
+
+.voltedge-notch-icon {
+  width: 36px;
+  height: 36px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.08);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #FFFFFF;
+  transition: all 0.3s ease;
+}
+
+.voltedge-card:hover .voltedge-notch-icon {
+  background: var(--volt-orange);
+  color: #FFFFFF;
+  transform: rotate(45deg);
+}
+
+/* Card 2 Highlight (Emergency Services) */
+.voltedge-card.is-emergency .voltedge-card-notch {
+  background: #090E17;
+}
+
+.voltedge-card.is-emergency .voltedge-notch-icon {
+  background: var(--volt-orange);
+  color: #FFFFFF;
+}
+
+/* Bottom Tab Label */
+.voltedge-card-tab {
+  position: relative;
+  z-index: 2;
+  margin-top: auto;
+  align-self: flex-start;
+  background: #FFFFFF;
+  color: #0B111E;
+  padding: 13px 22px;
+  border-top-right-radius: 20px;
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: 1.02rem;
+  letter-spacing: -0.01em;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.25);
+  transition: all 0.25s ease;
+}
+
+.voltedge-card:hover .voltedge-card-tab {
+  color: var(--volt-orange);
+}
+
+.voltedge-card.is-emergency .voltedge-card-tab {
+  background: var(--volt-orange);
+  color: #FFFFFF;
+}
+
+/* Special Card 8: 24/7 Promo Card */
+.voltedge-promo-card {
+  position: relative;
+  height: 310px;
+  border-radius: 20px;
+  overflow: hidden;
+  background: #FFFFFF;
+  color: #0B111E;
+  padding: 28px 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-decoration: none;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+  transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.35s ease;
+}
+
+.voltedge-promo-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.55), 0 0 0 2px var(--volt-orange);
+}
+
+.voltedge-promo-notch {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 60px;
+  height: 60px;
+  background: var(--volt-orange);
+  border-bottom-left-radius: 24px;
+}
+
+.voltedge-promo-icon {
+  width: 48px;
+  height: 48px;
+  border: 2px solid #0B111E;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #0B111E;
+}
+
+.voltedge-promo-big {
+  font-family: var(--font-display);
+  font-size: 3.4rem;
+  font-weight: 900;
+  color: var(--volt-orange);
+  line-height: 1;
+  margin-bottom: 8px;
+}
+
+.voltedge-promo-title {
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: #0B111E;
+  line-height: 1.25;
+  margin-bottom: 6px;
+}
+
+.voltedge-promo-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.88rem;
+  font-weight: 700;
+  color: var(--volt-blue);
 }

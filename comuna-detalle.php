@@ -145,6 +145,12 @@ require_once __DIR__ . '/includes/header.php';
     </div>
 </section>
 
+<!-- SECCIÓN DE SERVICIOS VISUALES VOLTEDGE (8 TARJETAS DE IMPACTO) -->
+<?php 
+$comunaContext = $comuna['name'];
+require __DIR__ . '/includes/services-grid-voltedge.php'; 
+?>
+
 <!-- SECCIÓN SERVICIOS FRECUENTES EN ESTA COMUNA -->
 <section class="section-padding">
     <div class="container">
