@@ -14,7 +14,9 @@ $formSubtitle = $formSubtitle ?? 'Completa los datos y se abrirá tu WhatsApp co
             <img src="<?= LOGO_URL ?>" alt="Sello Eléctrico Certificado SEC" width="44" height="44" style="border-radius: 50%; box-shadow: 0 2px 8px rgba(0,0,0,0.15);">
             <div>
                 <strong style="display: block; font-family: var(--font-display); font-size: 1.05rem; color: var(--volt-dark);">Domingo Isain Plaza Caamaño</strong>
-                <span style="font-size: 0.78rem; color: var(--brand-blue); font-weight: 700; text-transform: uppercase;">Instalador Autorizado SEC Clase A</span>
+                <span style="font-size: 0.78rem; color: var(--brand-blue); font-weight: 700; text-transform: uppercase;">
+                    <?= SEC_CREDENTIAL ?> • <a href="<?= SEC_VERIFICATION_URL ?>" target="_blank" rel="noopener" style="color: var(--volt-orange); text-decoration: underline;">Verificar en SEC.cl ↗</a>
+                </span>
             </div>
         </div>
         <span style="background: rgba(37, 211, 102, 0.15); color: #1EBE5D; border: 1px solid rgba(37, 211, 102, 0.3); padding: 4px 12px; border-radius: var(--radius-pill); font-size: 0.8rem; font-weight: 700; display: inline-flex; align-items: center; gap: 6px;">

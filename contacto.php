@@ -55,8 +55,11 @@ require_once __DIR__ . '/includes/header.php';
                 <div class="service-card" style="text-align: center; align-items: center;">
                     <div class="service-icon-box" style="margin: 0 auto 16px;">🛡️</div>
                     <h3 class="service-card-title">Registro Oficial SEC</h3>
-                    <p class="service-card-desc">Instalador Eléctrico Autorizado Clase A</p>
-                    <strong style="font-size: 1.1rem; color: var(--volt-dark);"><?= SEC_LICENSE_NUMBER ?></strong>
+                    <p class="service-card-desc"><?= SEC_CREDENTIAL ?></p>
+                    <strong style="font-size: 1.05rem; color: var(--volt-dark); margin-bottom: 12px;"><?= SEC_LICENSE_NUMBER ?></strong>
+                    <a href="<?= SEC_VERIFICATION_URL ?>" target="_blank" rel="noopener" class="btn btn-sec-verify" style="width: 100%; font-size: 0.85rem; padding: 10px 14px;">
+                        Verificar en SEC.cl ↗
+                    </a>
                 </div>
             </div>
 

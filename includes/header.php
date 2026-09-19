@@ -83,7 +83,10 @@ $isHeaderDark = $isHeaderDark ?? true;
                 <span>Cobertura en todo Santiago de Chile</span>
             </div>
             <div class="top-bar-right">
-                <span>Registro Oficial: <strong><?= SEC_LICENSE_NUMBER ?></strong></span>
+                <a href="<?= SEC_VERIFICATION_URL ?>" target="_blank" rel="noopener" class="top-bar-verify-pill" title="Verificar credencial en el Registro Nacional de la SEC">
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><polyline points="9 12 11 14 15 10"/></svg>
+                    Verificar SEC: <?= SEC_RUT ?> ↗
+                </a>
                 <a href="tel:<?= PHONE_RAW ?>">📞 <?= PHONE_DISPLAY ?></a>
             </div>
         </div>
@@ -98,7 +101,7 @@ $isHeaderDark = $isHeaderDark ?? true;
                     <img src="<?= LOGO_URL ?>" alt="Logotipo Oficial Eléctrico Certificado SEC" width="66" height="66" class="logo-badge-img">
                     <div class="logo-text">
                         <span class="logo-main">ELÉCTRICO<span style="color: var(--volt-orange);">CERTIFICADO</span></span>
-                        <span class="logo-sec-tag"><span class="logo-sec-prefix">INSTALADOR ELÉCTRICO </span>AUTORIZADO SEC - CLASE A</span>
+                        <span class="logo-sec-tag"><span class="logo-sec-prefix">INSTALADOR ELÉCTRICO </span>AUTORIZADO SEC - CLASE B</span>
                     </div>
                 </a>
 

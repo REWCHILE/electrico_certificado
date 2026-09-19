@@ -17,7 +17,7 @@ $contextQuery = isset($comunaContext) && !empty($comunaContext) ? " en " . $comu
                 Soluciones Eléctricas de Excelencia <?= isset($comunaContext) ? 'en <span class="text-orange">' . htmlspecialchars($comunaContext) . '</span>' : '' ?>
             </h2>
             <p class="section-subtitle" style="color: #94A3B8; max-width: 680px; margin: 0 auto;">
-                Técnicos autorizados SEC Clase A equipados con herramientas de diagnóstico de última generación y cumplimiento estricto del reglamento SEC RIC.
+                Instaladores autorizados SEC equipados con herramientas de diagnóstico de última generación y cumplimiento estricto del reglamento SEC RIC.
             </p>
         </div>
 

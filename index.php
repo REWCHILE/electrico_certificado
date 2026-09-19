@@ -92,6 +92,17 @@ require_once __DIR__ . '/includes/header.php';
     </div>
 </section>
 
+<!-- SECCIÓN DE FORMULARIO DE COTIZACIÓN RÁPIDA -->
+<section style="padding: 40px 0 20px;">
+    <div class="container">
+        <?php 
+        $formTitle = "Envía Tu Requerimiento Directo al WhatsApp de Domingo";
+        $formSubtitle = "Describe tu problema o proyecto. Domingo te responderá a la brevedad con diagnóstico inicial o cotización.";
+        require __DIR__ . '/includes/quote-form.php'; 
+        ?>
+    </div>
+</section>
+
 <!-- SECCIÓN DE SERVICIOS PRINCIPALES (VOLTEDGE SIGNATURE GRID) -->
 <?php require __DIR__ . '/includes/services-grid-voltedge.php'; ?>
 
@@ -105,7 +116,7 @@ require_once __DIR__ . '/includes/header.php';
                     <img src="<?= LOGO_URL ?>" alt="Sello Oficial SEC Instalgas Chile" width="48" height="48">
                     <div>
                         <strong style="display: block; font-size: 0.95rem;"><?= ELECTRICIAN_NAME ?></strong>
-                        <span style="font-size: 0.8rem; color: var(--text-muted-dark);"><?= SEC_CREDENTIAL ?> • Reg. <?= SEC_LICENSE_NUMBER ?></span>
+                        <span style="font-size: 0.8rem; color: var(--text-muted-dark);"><?= SEC_CREDENTIAL ?> • <?= SEC_LICENSE_NUMBER ?></span>
                     </div>
                 </div>
             </div>
@@ -113,18 +124,22 @@ require_once __DIR__ . '/includes/header.php';
             <div>
                 <span class="section-badge">Trayectoria & Respaldo Legal</span>
                 <h2 class="section-title" style="text-align: left; margin-bottom: 20px;">
-                    Instalador Eléctrico Autorizado SEC Clase A
+                    Instalador Eléctrico Autorizado SEC
                 </h2>
                 <p style="font-size: 1.05rem; line-height: 1.7; color: var(--text-dark); margin-bottom: 18px;">
-                    En Chile, la seguridad de tu hogar, edificio o empresa no se puede dejar en manos inexpertas. Con la categoría <strong>Clase A</strong> otorgada por la Superintendencia de Electricidad y Combustibles (SEC), cuento con las facultades legales y técnicas máximas para diseñar, ejecutar y certificar proyectos eléctricos de cualquier magnitud.
+                    En Chile, la seguridad de tu hogar, edificio o empresa no se puede dejar en manos inexpertas. Con acreditación oficial otorgada por la <strong>Superintendencia de Electricidad y Combustibles (SEC)</strong> y formación técnica en el IP Santo Tomás, cuento con las facultades legales y técnicas para diseñar, normalizar y certificar instalaciones bajo el nuevo reglamento SEC RIC.
                 </p>
                 <p style="font-size: 1.02rem; line-height: 1.7; color: var(--text-dark); margin-bottom: 24px;">
-                    Más de <strong>4.747 clientes atendidos</strong> en Santiago avalan un trabajo limpio, ordenado y respaldado con boleta, factura y garantía técnica por escrito.
+                    Más de <strong>4.747 clientes atendidos</strong> en Santiago avalan un trabajo limpio, ordenado y respaldado con boleta, factura y garantía técnica por escrito. Además, contamos con alianzas técnicas e <strong>ingenieros Clase A</strong> para proyectos de envergadura industrial sin límite de potencia.
                 </p>
 
                 <div style="display: flex; flex-wrap: wrap; gap: 14px;">
                     <a href="<?= BASE_URL ?>/nosotros" class="btn btn-volt">Conocer Más Sobre Domingo →</a>
-                    <a href="https://wa.me/<?= WHATSAPP_NUMBER ?>?text=<?= urlencode('Hola Domingo, quiero consultar por un servicio eléctrico.') ?>" target="_blank" rel="noopener" class="btn btn-whatsapp">Contactar Directo por WhatsApp</a>
+                    <a href="<?= SEC_VERIFICATION_URL ?>" target="_blank" rel="noopener" class="btn btn-sec-verify">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><polyline points="9 12 11 14 15 10"/></svg>
+                        Verificar Licencia en SEC.cl ↗
+                    </a>
+                    <a href="https://wa.me/<?= WHATSAPP_NUMBER ?>?text=<?= urlencode('Hola Domingo, quiero consultar por un servicio eléctrico.') ?>" target="_blank" rel="noopener" class="btn btn-whatsapp">Contactar por WhatsApp</a>
                 </div>
             </div>
         </div>
@@ -229,7 +244,7 @@ require_once __DIR__ . '/includes/header.php';
                 <div class="step-badge">3</div>
                 <h3 class="step-title">Ingreso Plataforma SEC</h3>
                 <p class="step-desc">
-                    Firma digital de Domingo como instalador Clase A y carga del expediente en el sistema e-declarador de la SEC.
+                    Firma digital autorizada SEC de instalador acreditado y carga del expediente en el sistema e-declarador de la SEC.
                 </p>
             </div>
 

@@ -8,7 +8,7 @@ require_once __DIR__ . '/../config.php';
 $faqs = require __DIR__ . '/../data/faqs.php';
 
 $pageTitle = "⭐⭐⭐⭐⭐ Certificado TE1 SEC Oficial en Santiago | Trámite Rápido Aprobado";
-$pageDescription = "⭐⭐⭐⭐⭐ 4.747 Reseñas. Obtén tu Certificado TE1 SEC sin rechazos. Planos CAD, memoria explicativa y firma de instalador autorizado Clase A para Enel, CGE y municipalidades.";
+$pageDescription = "⭐⭐⭐⭐⭐ 4.747 Reseñas. Obtén tu Certificado TE1 SEC sin rechazos. Planos CAD, memoria explicativa y firma de instalador autorizado SEC para Enel, CGE y municipalidades.";
 $canonicalUrl = get_canonical_url('servicios/certificacion-te1-sec');
 
 $pageFaqs = [
@@ -27,28 +27,29 @@ require_once __DIR__ . '/../includes/header.php';
         <div class="profile-showcase-grid">
             <div>
                 <div class="hero-badge-row" style="justify-content: flex-start;">
-                    <span class="badge-sec-verified">
-                        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z"/></svg>
-                        <?= SEC_CREDENTIAL ?> • 100% Aprobación
-                    </span>
-                    <span class="badge-urgencias-247">
-                        ⚡ Inscripción Digital SEC
-                    </span>
-                </div>
-
-                <h1 class="hero-heading" style="font-size: clamp(2.2rem, 4.2vw, 3.8rem); text-align: left;">
-                    Certificado TE1 SEC <br><span class="text-orange">en Santiago de Chile</span>
+<!-- HERO ESPECÍFICO TE1 -->
+<section class="hero-voltedge" style="padding: 60px 0 80px;">
+    <div class="container">
+        <div style="display: grid; grid-template-columns: 1fr; gap: 40px; align-items: center;" class="hero-service-layout">
+            <div>
+                <span class="badge-sec-verified" style="margin-bottom: 16px;">
+                    <?= SEC_CREDENTIAL ?> (<?= SEC_LICENSE_NUMBER ?>)
+                </span>
+                <h1 class="hero-heading" style="text-align: left; font-size: clamp(2.2rem, 4.5vw, 3.6rem);">
+                    Tramitación & Aprobación Oficial de <span class="text-orange">Certificado TE1 SEC</span>
                 </h1>
                 <p class="hero-subheading" style="text-align: left; margin: 0 0 30px;">
-                    Tramitación oficial de la Declaración de Instalación Eléctrica Interior (TE1) ante la Superintendencia de Electricidad y Combustibles para casas, locales, ampliaciones y nuevos medidores.
+                    Gestionamos tu declaración eléctrica interior ante la Superintendencia de Electricidad y Combustibles de Chile. Planos en AutoCAD, memoria de cálculo, firma autorizada y seguimiento continuo hasta la entrega del folio con código QR.
                 </p>
-
-                <div class="hero-cta-group">
-                    <a href="https://wa.me/<?= WHATSAPP_NUMBER ?>?text=<?= urlencode('Hola Domingo, necesito presupuesto para tramitar un Certificado TE1 SEC.') ?>" target="_blank" rel="noopener" class="btn btn-volt btn-lg">
-                        Cotizar Certificado TE1 por WhatsApp
+                <div style="display: flex; flex-wrap: wrap; gap: 14px;">
+                    <a href="https://wa.me/<?= WHATSAPP_NUMBER ?>?text=<?= urlencode('Hola Domingo, necesito tramitar o consultar por un Certificado TE1 SEC.') ?>" target="_blank" rel="noopener" class="btn btn-volt btn-lg">
+                        ⚡ Cotizar TE1 por WhatsApp
+                    </a>
+                    <a href="<?= SEC_VERIFICATION_URL ?>" target="_blank" rel="noopener" class="btn btn-sec-verify btn-lg">
+                        Verificar Licencia SEC ↗
                     </a>
                     <a href="tel:<?= PHONE_RAW ?>" class="btn btn-outline btn-lg" style="color: #FFF; border-color: rgba(255,255,255,0.3);">
-                        📞 Llamar al <?= PHONE_DISPLAY ?>
+                        📞 <?= PHONE_DISPLAY ?>
                     </a>
                 </div>
             </div>
@@ -62,7 +63,7 @@ require_once __DIR__ . '/../includes/header.php';
                                 <div class="stars-group">★★★★★</div>
                                 <div class="rating-text" style="margin-top: 4px;">
                                     <div class="rating-score">Expediente 100% Legal</div>
-                                    <div>Planos CAD + Memoria + Firma SEC Clase A</div>
+                                    <div>Planos CAD + Memoria + Firma Autorizada SEC</div>
                                 </div>
                             </div>
                         </div>
@@ -160,10 +161,24 @@ require_once __DIR__ . '/../includes/header.php';
                 <div class="step-badge">4</div>
                 <h3 class="step-title">Firma & Folio SEC</h3>
                 <p class="step-desc">
-                    Firma autorizada de Domingo Clase A, ingreso al portal de la SEC y entrega del certificado con código de verificación QR.
+                    Firma digital autorizada de instalador acreditado SEC, ingreso al portal oficial eRNII y entrega del certificado definitivo con folio y código QR.
                 </p>
             </div>
         </div>
+    </div>
+</section>
+
+<!-- ACREDITACIÓN OFICIAL SEC EN VIVO -->
+<section class="section-padding" style="background: #FFFFFF; padding-top: 20px;">
+    <div class="container">
+        <div class="section-header" style="margin-bottom: 24px;">
+            <span class="section-badge">Transparencia & Respaldo</span>
+            <h2 class="section-title">Comprueba la Habilitación Oficial de Domingo en la SEC</h2>
+            <p class="section-subtitle">
+                Antes de tramitar un Certificado TE1, comprueba que tu instalador cuente con licencia activa en el Registro Nacional de la SEC para evitar rechazos o demoras.
+            </p>
+        </div>
+        <?php require __DIR__ . '/../includes/sec-verification-card.php'; ?>
     </div>
 </section>
 

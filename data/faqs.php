@@ -22,7 +22,7 @@ return [
     ],
     [
         'question' => '¿Cómo puedo verificar que Domingo es un instalador autorizado SEC vigente?',
-        'answer' => 'Puedes comprobar la vigencia de cualquier instalador eléctrico directamente en el portal oficial de la SEC (www.sec.cl) en la sección "Búsqueda de Instaladores Autorizados" ingresando el RUT o número de registro de instalador. Domingo cuenta con carnet Clase A (capacitado para proyectos en baja y media tensión sin límite de potencia) y te mostrará su credencial física o digital en cada visita técnica.'
+        'answer' => 'Puedes comprobar la vigencia de Domingo Isain Plaza Caamaño en tiempo real directamente en el portal oficial de la SEC (wlhttp.sec.cl) escaneando el código QR de su credencial o ingresando su RUT 12.738.961-6 en el Registro Nacional de Instaladores e Inspectores (eRNII). Domingo cuenta con licencia de Instalador Eléctrico Autorizado SEC Clase B (Técnico en Electricidad y Electrónica Industrial - IP Santo Tomás), respaldado por un equipo técnico que incluye ingenieros Clase A para proyectos de envergadura industrial sin límite de potencia.'
     ],
     [
         'question' => '¿Cuánto cobra un electricista a domicilio en Santiago por revisión o presupuesto?',

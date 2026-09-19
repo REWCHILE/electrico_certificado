@@ -6,6 +6,10 @@
 Options -Indexes +FollowSymLinks -MultiViews
 RewriteEngine On
 
+# 0. Canonical 301 Redirect: www to non-www (SEO Checker Recommendation)
+RewriteCond %{HTTP_HOST} ^www\.electrico-certificado\.cl$ [NC]
+RewriteRule ^(.*)$ https://electrico-certificado.cl/$1 [R=301,L]
+
 # 1. Sitemap XML
 RewriteRule ^sitemap\.xml$ sitemap.php [L]
 

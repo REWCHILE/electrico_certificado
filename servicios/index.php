@@ -17,7 +17,7 @@ require_once __DIR__ . '/../includes/header.php';
 <!-- HEADER SERVICIOS -->
 <section style="background: radial-gradient(circle at 50% 20%, #1e2638 0%, #0B0E14 100%); color: #FFF; padding: 60px 0; text-align: center;">
     <div class="container">
-        <span class="badge-sec-verified" style="margin-bottom: 14px;">INSTALADOR ELÉCTRICO AUTORIZADO CLASE A</span>
+        <span class="badge-sec-verified" style="margin-bottom: 14px;"><?= SEC_CREDENTIAL ?> (<?= SEC_LICENSE_NUMBER ?>)</span>
         <h1 class="hero-heading" style="font-size: clamp(2rem, 4vw, 3.2rem);">
             Servicios Eléctricos Certificados SEC <br><span class="text-orange">en Todo Santiago</span>
         </h1>

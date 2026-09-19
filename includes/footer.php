@@ -75,8 +75,18 @@
                             <a href="https://wa.me/<?= WHATSAPP_NUMBER ?>?text=<?= WHATSAPP_DEFAULT_MSG ?>" target="_blank" rel="noopener" style="font-weight: 700; color: #25D366;">💬 Chatear con Domingo</a>
                         </li>
                         <li>
-                            <span style="display: block; font-size: 0.8rem; color: var(--text-muted-dark); text-transform: uppercase; font-weight: 700;">Carnet SEC Oficial</span>
-                            <span style="color: #FFF; font-weight: 600;"><?= SEC_LICENSE_NUMBER ?></span>
+                            <span style="display: block; font-size: 0.8rem; color: var(--text-muted-dark); text-transform: uppercase; font-weight: 700;">Acreditación Oficial SEC</span>
+                            <div style="display: flex; align-items: center; gap: 12px; margin-top: 8px;">
+                                <a href="<?= SEC_VERIFICATION_URL ?>" target="_blank" rel="noopener" title="Verificar licencia en el portal oficial de la SEC">
+                                    <img src="<?= SEC_QR_IMAGE ?>" alt="Código QR Licencia SEC Domingo" width="56" height="56" style="background: #FFFFFF; padding: 4px; border-radius: 8px; flex-shrink: 0; box-shadow: 0 2px 8px rgba(0,0,0,0.4);">
+                                </a>
+                                <div>
+                                    <span style="color: #FFFFFF; font-weight: 700; font-size: 0.85rem; display: block;"><?= SEC_CREDENTIAL ?></span>
+                                    <a href="<?= SEC_VERIFICATION_URL ?>" target="_blank" rel="noopener" style="font-size: 0.8rem; color: #93C5FD; text-decoration: underline; font-weight: 600; display: inline-flex; align-items: center; gap: 4px; margin-top: 2px;">
+                                        Verificar en SEC.cl ↗
+                                    </a>
+                                </div>
+                            </div>
                         </li>
                         <li>
                             <span style="display: block; font-size: 0.8rem; color: var(--text-muted-dark); text-transform: uppercase; font-weight: 700;">Oficina Base</span>

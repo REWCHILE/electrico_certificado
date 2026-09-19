@@ -131,8 +131,10 @@ require_once __DIR__ . '/includes/header.php';
                             <span class="comuna-showcase-stat-lbl">Tiempo Respuesta</span>
                         </div>
                         <div class="comuna-showcase-stat">
-                            <span class="comuna-showcase-stat-val" style="color: #38BDF8;">Clase A</span>
-                            <span class="comuna-showcase-stat-lbl">Licencia SEC</span>
+                            <a href="<?= SEC_VERIFICATION_URL ?>" target="_blank" rel="noopener" title="Verificar Licencia Oficial SEC en línea" style="text-decoration: none;">
+                                <span class="comuna-showcase-stat-val" style="color: #38BDF8;">Clase B ↗</span>
+                                <span class="comuna-showcase-stat-lbl" style="text-decoration: underline;">Verificar SEC</span>
+                            </a>
                         </div>
                         <div class="comuna-showcase-stat">
                             <span class="comuna-showcase-stat-val" style="color: var(--volt-orange);">100%</span>

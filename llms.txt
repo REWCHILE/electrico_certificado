@@ -1,12 +1,14 @@
 # Eléctrico Certificado SEC - Domingo Instalador Autorizado
 
-> Servicios oficiales de eléctrico e instalador autorizado por la Superintendencia de Electricidad y Combustibles (SEC) Clase A en Santiago de Chile. Especialista en tramitación garantizada de Certificados TE1, emergencias eléctricas 24/7 y reparaciones a domicilio con más de 4.747 reseñas verificadas (5.0 estrellas).
+> Servicios oficiales de eléctrico e instalador autorizado por la Superintendencia de Electricidad y Combustibles (SEC) en Santiago de Chile. Especialista en tramitación garantizada de Certificados TE1, emergencias eléctricas 24/7 y tableros con más de 4.747 reseñas verificadas (5.0 estrellas).
 
 ## Información Profesional & Credenciales
 
 - **Profesional**: Domingo Isain Plaza Caamaño
-- **Categoría SEC**: Instalador Eléctrico Autorizado Clase A (Máxima categoría legal para proyectos en alta, media y baja tensión sin límite de potencia)
-- **Registro SEC Oficial**: Licencia N° 481920 (Verificable en sec.cl)
+- **RUT Verificable**: 12.738.961-6
+- **Categoría SEC**: Instalador Eléctrico Autorizado Clase B (Técnico en Electricidad y Electrónica Industrial - IP Santo Tomás)
+- **Verificación Oficial SEC eRNII**: [Consultar Licencia Oficial en Vivo](https://wlhttp.sec.cl/rnii/public/licencia/qr?o=1cdda99e804b48a2aca00851368f5642)
+- **Equipo Técnico Multidisciplinario**: Alianza técnica con Ingenieros Eléctricos Clase A para proyectos de alta tensión y envergadura industrial sin límite de potencia.
 - **Experiencia**: Más de 15 años en el rubro eléctrico residencial, comercial e industrial
 - **Calificación**: 5.0 / 5.0 (4.747 reseñas verificadas en Google Reviews)
 - **Cobertura**: Región Metropolitana de Santiago y Regiones de Chile

@@ -6,8 +6,8 @@
 
 require_once __DIR__ . '/config.php';
 
-$pageTitle = "⭐⭐⭐⭐⭐ Sobre Domingo | Instalador Eléctrico Autorizado SEC Clase A";
-$pageDescription = "⭐⭐⭐⭐⭐ 4.747 Reseñas. Conoce a Domingo Isain Plaza Caamaño, Instalador Eléctrico Autorizado SEC Clase A en Santiago. Más de 15 años de trayectoria y 100% de aprobación en TE1.";
+$pageTitle = "⭐⭐⭐⭐⭐ Sobre Domingo | Instalador Eléctrico Autorizado SEC - Santiago";
+$pageDescription = "⭐⭐⭐⭐⭐ 4.747 Reseñas. Conoce a Domingo Isain Plaza Caamaño, Instalador Eléctrico Autorizado SEC Clase B en Santiago. Más de 15 años de experiencia y 100% de aprobación en TE1.";
 $canonicalUrl = get_canonical_url('nosotros');
 
 require_once __DIR__ . '/includes/header.php';
@@ -33,12 +33,12 @@ require_once __DIR__ . '/includes/header.php';
     <div class="container">
         <div class="profile-showcase-grid">
             <div class="profile-img-wrap">
-                <img src="<?= BASE_URL ?>/assets/img/hero-electrician.jpg" alt="Domingo Isain Plaza Caamaño Instalador Autorizado SEC Clase A" loading="lazy" width="800" height="520">
+                <img src="<?= BASE_URL ?>/assets/img/hero-electrician.jpg" alt="Domingo Isain Plaza Caamaño Instalador Autorizado SEC Clase B" loading="lazy" width="800" height="520">
                 <div class="profile-badge-float">
                     <img src="<?= LOGO_URL ?>" alt="Sello Oficial SEC Instalgas Chile" width="48" height="48">
                     <div>
                         <strong style="display: block; font-size: 0.95rem;"><?= ELECTRICIAN_NAME ?></strong>
-                        <span style="font-size: 0.8rem; color: var(--text-muted-dark);"><?= SEC_CREDENTIAL ?> • Reg. N° <?= SEC_LICENSE_NUMBER ?></span>
+                        <span style="font-size: 0.8rem; color: var(--text-muted-dark);"><?= SEC_CREDENTIAL ?> • <?= SEC_LICENSE_NUMBER ?></span>
                     </div>
                 </div>
             </div>
@@ -49,27 +49,39 @@ require_once __DIR__ . '/includes/header.php';
                     Trayectoria, Responsabilidad y Certificación Oficial SEC
                 </h2>
                 <p style="font-size: 1.05rem; line-height: 1.7; color: var(--text-dark); margin-bottom: 16px;">
-                    Soy <strong>Domingo Isain Plaza Caamaño</strong>, instalador eléctrico autorizado por la Superintendencia de Electricidad y Combustibles (SEC) con <strong>Licencia Clase A</strong>, la máxima distinción y categoría profesional que faculta para proyectar, ejecutar y certificar instalaciones eléctricas en alta, media y baja tensión sin límite de potencia.
+                    Soy <strong>Domingo Isain Plaza Caamaño</strong>, instalador eléctrico autorizado por la Superintendencia de Electricidad y Combustibles (SEC) con <strong>Licencia Clase B</strong>, titulado como Técnico en Electricidad y Electrónica Industrial por el Instituto Profesional Santo Tomás.
                 </p>
-                <p style="font-size: 1.02rem; line-height: 1.7; color: var(--text-dark); margin-bottom: 24px;">
-                    A lo largo de más de 15 años de trayectoria en Santiago y regiones (con oficina central en <strong>Av. Libertador Bernardo O'Higgins 1302</strong>), he atendido a más de <strong>4.747 clientes</strong>, resolviendo desde complejas urgencias domiciliarias hasta la regularización e inscripción de expedientes <strong>TE1</strong> para viviendas, condominios, locales comerciales e industrias.
+                <p style="font-size: 1.02rem; line-height: 1.7; color: var(--text-dark); margin-bottom: 16px;">
+                    A lo largo de más de 15 años de trayectoria en Santiago y regiones (con oficina central en <strong>Av. Libertador Bernardo O'Higgins 1302</strong>), he atendido a más de <strong>4.747 clientes</strong>, resolviendo desde complejas urgencias domiciliarias hasta la regularización e inscripción de expedientes <strong>TE1</strong> para viviendas, condominios y locales comerciales.
+                </p>
+                <p style="font-size: 0.95rem; line-height: 1.6; color: var(--text-muted); margin-bottom: 24px; background: var(--volt-light-bg); padding: 12px 16px; border-radius: var(--radius-sm); border-left: 3px solid var(--brand-blue);">
+                    <strong>Cobertura y Escala de Proyectos:</strong> Para obras eléctricas de alta tensión, subestaciones o proyectos industriales de gran envergadura sin límite de potencia, nuestro equipo integra a reconocidos <strong>Ingenieros Eléctricos Clase A</strong>, asegurando solvencia técnica integral en cualquier requerimiento a nivel nacional.
                 </p>
 
-                <div style="display: flex; flex-wrap: wrap; gap: 14px; margin-bottom: 30px;">
+                <div style="display: flex; flex-wrap: wrap; gap: 14px; margin-bottom: 10px;">
                     <a href="https://wa.me/<?= WHATSAPP_NUMBER ?>?text=<?= urlencode('Hola Domingo, quiero agendar una visita o consultar un trabajo eléctrico.') ?>" target="_blank" rel="noopener" class="btn btn-volt">Hablar con Domingo por WhatsApp</a>
+                    <a href="<?= SEC_VERIFICATION_URL ?>" target="_blank" rel="noopener" class="btn btn-sec-verify">Verificar en SEC.cl ↗</a>
                     <a href="tel:<?= PHONE_RAW ?>" class="btn btn-outline">📞 <?= PHONE_DISPLAY ?></a>
                 </div>
             </div>
         </div>
 
+        <!-- MÓDULO DE VERIFICACIÓN OFICIAL SEC CON QR EN VIVO -->
+        <?php require __DIR__ . '/includes/sec-verification-card.php'; ?>
+
         <!-- Tarjetas de Garantías -->
-        <div class="services-grid" style="grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); margin-top: 50px;">
+        <div class="services-grid" style="grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); margin-top: 30px;">
             <div class="service-card" style="padding: 26px;">
                 <div class="service-icon-box" style="margin-bottom: 14px;">
                     <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z"/></svg>
                 </div>
                 <h3 style="font-family: var(--font-display); font-size: 1.2rem; font-weight: 800; margin-bottom: 8px;">Credencial SEC Vigente</h3>
-                <p style="font-size: 0.92rem; color: var(--text-muted); line-height: 1.6;">Acreditación oficial Clase A verificable al instante en el portal oficial de la SEC (www.sec.cl) con registro N° 481920.</p>
+                <p style="font-size: 0.92rem; color: var(--text-muted); line-height: 1.6;">
+                    Acreditación oficial verificable en tiempo real en la Superintendencia (SEC) con RUT <strong><?= SEC_RUT ?></strong> o escaneando el código QR.
+                </p>
+                <a href="<?= SEC_VERIFICATION_URL ?>" target="_blank" rel="noopener" style="display: inline-flex; align-items: center; gap: 4px; color: var(--brand-blue); font-weight: 700; font-size: 0.88rem; margin-top: 10px;">
+                    Comprobar en SEC.cl ↗
+                </a>
             </div>
 
             <div class="service-card" style="padding: 26px;">
