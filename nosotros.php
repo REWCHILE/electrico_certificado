@@ -33,9 +33,12 @@ require_once __DIR__ . '/includes/header.php';
     <div class="container">
         <div class="profile-showcase-grid">
             <div class="profile-img-wrap">
-                <img src="<?= BASE_URL ?>/assets/img/hero-electrician.jpg" alt="Domingo Isain Plaza Caamaño Instalador Autorizado SEC Clase B" loading="lazy" width="800" height="520">
+                <picture>
+                    <source srcset="<?= SEC_CARD_WEBP ?>" type="image/webp">
+                    <img src="<?= SEC_CARD_IMAGE ?>" alt="Credencial Oficial Instalador Autorizado SEC - <?= ELECTRICIAN_NAME ?>" loading="lazy" width="800" height="446">
+                </picture>
                 <div class="profile-badge-float">
-                    <img src="<?= LOGO_URL ?>" alt="Sello Oficial SEC Instalgas Chile" width="48" height="48">
+                    <img src="<?= LOGO_URL ?>" alt="Sello Oficial SEC" width="48" height="48">
                     <div>
                         <strong style="display: block; font-size: 0.95rem;"><?= ELECTRICIAN_NAME ?></strong>
                         <span style="font-size: 0.8rem; color: var(--text-muted-dark);"><?= SEC_CREDENTIAL ?> • <?= SEC_LICENSE_NUMBER ?></span>
